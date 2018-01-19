@@ -15,6 +15,9 @@
 		0556426E2011D6020035590B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0556426D2011D6020035590B /* main.m */; };
 		055642782011D6020035590B /* FFMoreItemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 055642772011D6020035590B /* FFMoreItemsTests.m */; };
 		055642832011D6020035590B /* FFMoreItemsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 055642822011D6020035590B /* FFMoreItemsUITests.m */; };
+		055642952011D6460035590B /* ItemScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 055642932011D6460035590B /* ItemScrollView.m */; };
+		055642962011D6460035590B /* SmallItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 055642942011D6460035590B /* SmallItemView.m */; };
+		0943E28734ACCA3A9AF9D199 /* libPods-FFMoreItems.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B83076ED1FE51ADE2BEDA2 /* libPods-FFMoreItems.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		0556427E2011D6020035590B /* FFMoreItemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFMoreItemsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		055642822011D6020035590B /* FFMoreItemsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFMoreItemsUITests.m; sourceTree = "<group>"; };
 		055642842011D6020035590B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		055642912011D6460035590B /* SmallItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallItemView.h; sourceTree = "<group>"; };
+		055642922011D6460035590B /* ItemScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemScrollView.h; sourceTree = "<group>"; };
+		055642932011D6460035590B /* ItemScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemScrollView.m; sourceTree = "<group>"; };
+		055642942011D6460035590B /* SmallItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallItemView.m; sourceTree = "<group>"; };
+		19858176C5A33BFA42539CA8 /* Pods-FFMoreItems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMoreItems.release.xcconfig"; path = "Pods/Target Support Files/Pods-FFMoreItems/Pods-FFMoreItems.release.xcconfig"; sourceTree = "<group>"; };
+		E6B83076ED1FE51ADE2BEDA2 /* libPods-FFMoreItems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FFMoreItems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8375FC89FEBA372CFFDCA20 /* Pods-FFMoreItems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFMoreItems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FFMoreItems/Pods-FFMoreItems.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0943E28734ACCA3A9AF9D199 /* libPods-FFMoreItems.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				055642762011D6020035590B /* FFMoreItemsTests */,
 				055642812011D6020035590B /* FFMoreItemsUITests */,
 				0556425C2011D6020035590B /* Products */,
+				829930AA48E5A2E08875D9A1 /* Pods */,
+				07FACB5AB7B548E22693BA47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +114,7 @@
 		0556425D2011D6020035590B /* FFMoreItems */ = {
 			isa = PBXGroup;
 			children = (
+				055642902011D6460035590B /* FFScrollItems */,
 				0556425E2011D6020035590B /* AppDelegate.h */,
 				0556425F2011D6020035590B /* AppDelegate.m */,
 				055642612011D6020035590B /* ViewController.h */,
@@ -132,6 +146,34 @@
 			path = FFMoreItemsUITests;
 			sourceTree = "<group>";
 		};
+		055642902011D6460035590B /* FFScrollItems */ = {
+			isa = PBXGroup;
+			children = (
+				055642912011D6460035590B /* SmallItemView.h */,
+				055642942011D6460035590B /* SmallItemView.m */,
+				055642922011D6460035590B /* ItemScrollView.h */,
+				055642932011D6460035590B /* ItemScrollView.m */,
+			);
+			path = FFScrollItems;
+			sourceTree = "<group>";
+		};
+		07FACB5AB7B548E22693BA47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6B83076ED1FE51ADE2BEDA2 /* libPods-FFMoreItems.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		829930AA48E5A2E08875D9A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8375FC89FEBA372CFFDCA20 /* Pods-FFMoreItems.debug.xcconfig */,
+				19858176C5A33BFA42539CA8 /* Pods-FFMoreItems.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 055642872011D6020035590B /* Build configuration list for PBXNativeTarget "FFMoreItems" */;
 			buildPhases = (
+				D9FEE9F69741721CE0D45A51 /* [CP] Check Pods Manifest.lock */,
 				055642572011D6020035590B /* Sources */,
 				055642582011D6020035590B /* Frameworks */,
 				055642592011D6020035590B /* Resources */,
+				B61CF0DCAFED915B18557932 /* [CP] Embed Pods Frameworks */,
+				5FB55681BBDA06F4F10FE845 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,11 +305,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FB55681BBDA06F4F10FE845 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMoreItems/Pods-FFMoreItems-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61CF0DCAFED915B18557932 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FFMoreItems/Pods-FFMoreItems-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9FEE9F69741721CE0D45A51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FFMoreItems-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		055642572011D6020035590B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				055642952011D6460035590B /* ItemScrollView.m in Sources */,
+				055642962011D6460035590B /* SmallItemView.m in Sources */,
 				055642632011D6020035590B /* ViewController.m in Sources */,
 				0556426E2011D6020035590B /* main.m in Sources */,
 				055642602011D6020035590B /* AppDelegate.m in Sources */,
@@ -428,6 +526,7 @@
 		};
 		055642882011D6020035590B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8375FC89FEBA372CFFDCA20 /* Pods-FFMoreItems.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +541,7 @@
 		};
 		055642892011D6020035590B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19858176C5A33BFA42539CA8 /* Pods-FFMoreItems.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
